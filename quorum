@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+class Quorum
+{
+    public:
+    int count(vector <int>quorum, int k)
+        {
+        int total=0;
+        sort(quorum.begin(),quorum.end());
+        for (int i=0;i<k;i++)
+            total+=quorum[i];
+        return total;
+        }
+    };
